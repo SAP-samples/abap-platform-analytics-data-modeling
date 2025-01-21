@@ -1,0 +1,5 @@
+@EndUserText.label: 'Demo Service with Flight-Queries'
+define service /DMO/ANA_FlightQuery_Serivce
+  provider contracts ina {
+  expose /DMO/ANA_C_AirportCapaQry;
+}
