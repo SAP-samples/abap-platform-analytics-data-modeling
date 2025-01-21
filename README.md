@@ -56,7 +56,7 @@ You may simply state "No known issues.
 -->
 ## How to obtain support
 This project is provided "as-is": there is no guarantee that [raised issues](https://github.com/SAP-samples/abap-platform-analytics-data-modeling/issues) will be answered or addressed in future releases.
-For additional support, [ask a question in SAP Community](https://answers.sap.com/questions/ask.html).
+For additional support, please [ask questions in SAP Community](https://answers.sap.com/questions/ask.html).
 
 ## License
 Copyright (c) 2025 SAP SE or an SAP affiliate company. All rights reserved. This project is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](LICENSE) file.
