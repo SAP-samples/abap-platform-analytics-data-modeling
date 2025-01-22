@@ -22,7 +22,8 @@ Use the abapGit plug-in to import the <em>ABAP Platform Examples for Analytical 
 5. Enter the newly created package `/DMO/ANA_FLIGHT` as the target package and choose <em>Next</em>.
 6. Create a new transport request that you only use for this demo content installation (recommendation) and choose <em>Finish</em> to link the Git repository to your ABAP cloud project. The repository appears in the abapGit Repositories View with status <em>Linked</em>.
 7. Right-click on the new ABAP repository and choose `pull` to start the cloning of the repository contents. Note that this procedure may take a few minutes. 
-8. Once the cloning has finished, the status is set to `Pulled Successfully`. (Refresh the `abapGit Repositories` view to see the progress of the import). Refresh the project tree.
+8. Once the cloning has finished, the status is set to `Pulled Successfully`. (Refresh the `abapGit Repositories` view to see the progress of the import).
+9. Refresh the project tree.
 
 As a result of the installation procedure above, the ABAP system creates an inactive version of all artifacts from the demo content and adds the sub package `/DMO/ANA_FLIGHT_QUERY` to the target package that contains additional analytical queries that demonstrate various features of embedded analytics.
 
@@ -33,10 +34,12 @@ To activate all development objects from the `/DMO/ANA_FLIGHT` package:
 
 To fill the demo database tables: 
 1. Expand the package structure in the Project Explorer `/DMO/FLIGHT_LEGACY` > `Source Code Library` > `Classes`.
-2. Open the data generator class `/DMO/CL_FLIGHT_DATA_GENERATOR`.
-3. Change the used constants in METHOD build_connection_recurrency to "cv_days_between_4weeks" to get data that is better suited for analytical purposes.
-4. Now press `F9` to run the generator as Console Application.
-5. Even if you did run the generator before, you need to run the generator again after having installed the <em>ABAP Platform Examples for Analytical Data Modeling</em> to get additional example data e.g. for the hierarchies.
+2. Open the data generator class `/DMO/CL_FLIGHT_DATA_GENERATOR` and go to `lcl_flight_data_generator`.
+3. Change the used constants in METHOD `build_connection_recurrency` to `cv_days_between_4weeks` to get data that is better suited for analytical purposes.
+4. Activate.
+5. Now press `F9` to run the generator as Console Application.
+
+NOTE: Even if you did run the generator before, you need to run the generator again after having installed the <em>ABAP Platform Examples for Analytical Data Modeling</em> to get additional example data e.g. for the hierarchies.
 
 To be able to use currency conversion:
 1. Import the Github repo https://github.com/SAP-samples/cloud-abap-exchange-rates into your system.
