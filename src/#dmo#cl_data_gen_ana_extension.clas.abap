@@ -304,8 +304,8 @@ l_ts_city = value #(
                     nodetext     = 'World'  ##NO_TEXT
                   ) TO e_t_node.
 
-    ADD 1 TO l_node_id.
-    ADD 1 TO l_sequence_number.
+    l_node_id += 1.
+    l_sequence_number += 1.
     APPEND VALUE #( hierarchy_id    = i_hieid
                     node_id         = l_node_id
 *                 PARENT_NODE_ID initial == root!
@@ -328,8 +328,8 @@ l_ts_city = value #(
           READ TABLE e_t_hier ASSIGNING FIELD-SYMBOL(<l_s_hier_node>)
             WITH KEY nodename = to_upper( l_nodetext ).
           IF sy-subrc <> 0.
-            ADD 1 TO l_node_id.
-            ADD 1 TO l_sequence_number.
+            l_node_id += 1.
+            l_sequence_number += 1.
             APPEND VALUE #( hierarchy_id    = i_hieid
                             node_id         = l_node_id
                             parent_node_id  = c_nodeid_world
@@ -343,8 +343,8 @@ l_ts_city = value #(
                           ) TO e_t_node.
           ENDIF.
 
-          ADD 1 TO l_node_id.
-          ADD 1 TO l_sequence_number.
+          l_node_id += 1.
+          l_sequence_number += 1.
           APPEND VALUE #( hierarchy_id    = i_hieid
                           node_id         = l_node_id
                           parent_node_id  = <l_s_hier_node>-node_id
@@ -354,8 +354,8 @@ l_ts_city = value #(
                         ) TO e_t_hier ASSIGNING <l_s_hier_country>.
         ENDIF.
 
-        ADD 1 TO l_node_id.
-        ADD 1 TO l_sequence_number.
+        l_node_id += 1.
+        l_sequence_number += 1.
         APPEND VALUE #( hierarchy_id = i_hieid
                         node_id      = l_node_id
                         parent_node_id = <l_s_hier_country>-node_id
@@ -366,8 +366,8 @@ l_ts_city = value #(
                       ) TO e_t_hier ASSIGNING <l_s_hier_city>.
       ENDIF.
 
-      ADD 1 TO l_node_id.
-      ADD 1 TO l_sequence_number.
+      l_node_id += 1.
+      l_sequence_number += 1.
       APPEND VALUE #( hierarchy_id = i_hieid
                       node_id      = l_node_id
                       parent_node_id = <l_s_hier_city>-node_id
@@ -410,8 +410,8 @@ l_ts_city = value #(
                     nodetext = 'all'   ##NO_TEXT
                   ) TO e_t_node.
 
-    ADD 1 TO l_node_id.
-    ADD 1 TO l_sequence_number.
+    l_node_id += 1.
+    l_sequence_number += 1.
     APPEND VALUE #( hierarchy_id    = i_hieid
                     node_id         = l_node_id
 *                 PARENT_NODE_ID initial == root!
@@ -445,8 +445,8 @@ l_ts_city = value #(
         READ TABLE e_t_hier ASSIGNING FIELD-SYMBOL(<l_s_hier_l1>)
           WITH KEY nodename = l_nodename_p .
         IF sy-subrc <> 0.
-          ADD 1 TO l_node_id.
-          ADD 1 TO l_sequence_number.
+          l_node_id += 1.
+          l_sequence_number += 1.
           APPEND VALUE #( hierarchy_id    = i_hieid
                           node_id         = l_node_id
                           parent_node_id  = c_nodeid_all
@@ -460,8 +460,8 @@ l_ts_city = value #(
                         ) TO e_t_node.
         ENDIF.
 
-        ADD 1 TO l_node_id.
-        ADD 1 TO l_sequence_number.
+        l_node_id += 1.
+        l_sequence_number += 1.
         APPEND VALUE #( hierarchy_id    = i_hieid
                         node_id         = l_node_id
                         parent_node_id  = <l_s_hier_l1>-node_id
@@ -475,8 +475,8 @@ l_ts_city = value #(
                       ) TO e_t_node.
       ENDIF.
 
-      ADD 1 TO l_node_id.
-      ADD 1 TO l_sequence_number.
+      l_node_id += 1.
+      l_sequence_number += 1.
       APPEND VALUE #( hierarchy_id = i_hieid
                       node_id      = l_node_id
                       parent_node_id = <l_s_hier_l2>-node_id
