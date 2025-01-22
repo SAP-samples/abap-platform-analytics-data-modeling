@@ -36,15 +36,18 @@ To fill the demo database tables:
 1. Expand the package structure in the Project Explorer `/DMO/FLIGHT_LEGACY` > `Source Code Library` > `Classes`.
 2. Open the data generator class `/DMO/CL_FLIGHT_DATA_GENERATOR` and go to `lcl_flight_data_generator`.
 3. Change the used constants in METHOD `build_connection_recurrency` to `cv_days_between_4weeks` to get data that is better suited for analytical purposes.
-4. Activate.
+4. Mass Activate.
 5. Now press `F9` to run the generator as Console Application.
 
 NOTE: Even if you did run the generator before, you need to run the generator again after having installed the <em>ABAP Platform Examples for Analytical Data Modeling</em> to get additional example data e.g. for the hierarchies.
 
 To be able to use currency conversion:
-1. Import the Github repo https://github.com/SAP-samples/cloud-abap-exchange-rates into your system.
-2. Try the XML import from the European Central Bank.
-3. As an alternative implement class zcl_ecb_exchange_rates_xml and run it in the console. The code of the class can be found in the text file zcl_ecb_exchange_rates_xml.aba.
+1. Create a new package of your choice, e.g. `ZCURR_CONV`.
+2. Import the Github repo `https://github.com/SAP-samples/cloud-abap-exchange-rates` into the new package.
+3. Mass Activate.
+4. Check https://github.com/SAP-samples/cloud-abap-exchange-rates/blob/main/README.md for instructions how to use.
+5. Try the XML import from the European Central Bank via `zcl_ecb_exchange_rates_xml`.
+6. As an alternative implement class zcl_ecb_exchange_rates_xml and run it in the console. The code of the class can be found in the text file zcl_ecb_exchange_rates_xml.aba.
 
 NOTE: The namespace /DMO/ is reserved for the demo content. Apart from the downloaded demo content, do not use the namespace /DMO/ and do not create any development objects in the downloaded packages. You can access the development objects in /DMO/ from your own namespace.
 
