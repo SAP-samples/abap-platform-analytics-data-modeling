@@ -15,9 +15,9 @@ as projection on /DMO/ANA_I_FlightCube
      totals: #SHOW
   }
   ConnectionID,
-  @Consumption.groupWithElement: 'ConnectionID'
+  //@Consumption.groupWithElement: 'ConnectionID'
   _Connection.DepartureTime,
-  @Consumption.groupWithElement: 'ConnectionID'
+  //@Consumption.groupWithElement: 'ConnectionID'
   _Connection.ArrivalTime,
   
   CurrencyCode,
