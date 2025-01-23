@@ -1,6 +1,5 @@
-<!--- Register repository https://api.reuse.software/register, then add REUSE badge:
-[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/REPO-NAME)](https://api.reuse.software/info/github.com/SAP-samples/REPO-NAME)
--->
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/abap-platform-analytics-data-modeling)](https://api.reuse.software/info/github.com/SAP-samples/abap-platform-analytics-data-modeling)
+
 # ABAP Platform Examples for Analytical Data Modeling
 The ABAP Platform Examples for Analytical Data Modeling provide an analytical data model that is based on the ABAP Flight Reference Scenario. It allows to get  familiar with modern, ABAP-CDS based analytical data modeling and provides examples for the most prominent features of the Embedded Analytics functionality in the ABAP Platform. You can either use the provided data model as is or build your own data model using parts of the examples.
 
