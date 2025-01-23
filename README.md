@@ -37,16 +37,16 @@ To activate all development objects from the `/DMO/ANA_FLIGHT` package:
 To fill the demo database tables: 
 1. Expand the package structure in the Project Explorer `/DMO/FLIGHT_LEGACY` > `Source Code Library` > `Classes`.
 2. Open the data generator class `/DMO/CL_FLIGHT_DATA_GENERATOR` and go to `lcl_flight_data_generator`.
-3. Change the used constants in METHOD `build_connection_recurrency` to `cv_days_between_4weeks` to get data that is better suited for analytical purposes.
-4. Mass-activate.
-5. Now press `F9` to run the generator as Console Application.
+3. Find the METHOD `build_connection_recurrency` and change the variable `lv_days_between` to use the constant `cv_days_between_4weeks`. The resulting code should now look like this: `DATA(lv_days_between) = cv_days_between_4weeks.` to get data that is better suited for analytical purposes.
+6. Mass-activate.
+7. Now press `F9` to run the generator as Console Application.
 
 NOTE: Even if you did run the generator before, you need to run the generator again after having installed the <em>ABAP Platform Examples for Analytical Data Modeling</em> to get additional analytics-specific example data e.g. for hierarchies.
 
-NOTE: The data generator will always generate "current" data around the date it was trigered. The demo views instead may have fixed dates e.g. for parameter defaults or in where conditions. Therefore please check and adapt these dates in case you experience issues when previewing data.
+NOTE: The data generator will always generate "current" data around the date it was trigered. The demo views instead may have fixed dates e.g. for parameter defaults or in filter conditions. Therefore please check and adapt these dates in case you experience issues when previewing data.
 
-### Importing Currency Conversion Rates
-To be able to use the currency conversion feature:
+### Optional: Importing Currency Conversion Rates
+To be able to use the currency conversion feature, you need the currency conversion rates to be available in your system. If loading currency conversion rates is not set up in your system, you may use the following procedure for lading the rates one time (or on demand):
 1. Create a new package of your choice, e.g. `ZCURR_CONV`.
 2. Import the Github repo `https://github.com/SAP-samples/cloud-abap-exchange-rates` into the new package.
 3. Mass-activate.
