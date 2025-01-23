@@ -1,7 +1,7 @@
 @AccessControl.authorizationCheck: #NOT_ALLOWED
 @EndUserText.label: 'Airport Capacity'
 @ObjectModel: {
-  supportedCapabilities: [ #ANALYTICAL_QUERY, #KEY_USER_COPYING_TEMPLATE ],
+  supportedCapabilities: [ #ANALYTICAL_QUERY ],
   modelingPattern: #ANALYTICAL_QUERY
 }
 define transient view entity /DMO/ANA_C_AirportCapaQry
