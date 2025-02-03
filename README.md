@@ -5,7 +5,7 @@ The ABAP Platform Examples for Analytical Data Modeling provide an analytical da
 
 ## Requirements
 Make sure to fulfill the following prerequisites:
-* You have access to a recent ABAP Platform Cloud instance.
+* You have access to a recent ABAP Platform Cloud instance ([at least 2111](https://community.sap.com/t5/enterprise-resource-planning-blogs-by-sap/cds-analytical-projection-views-the-new-analytical-query-model/ba-p/13522701)).
 * You have downloaded and installed the most recent version of ABAP Development Tools (ADT). See the [installation page](https://tools.hana.ondemand.com/#abap). 
 * You have created an ABAP Cloud Project in ADT that allows you to access your ABAP Environment instance.
 * You have installed the [abapGit](https://github.com/abapGit/eclipse.abapgit.org) plug-in for ADT from the [ABAPGit update site](http://eclipse.abapgit.org/updatesite/).
@@ -37,7 +37,8 @@ To activate all development objects from the `/DMO/ANA_FLIGHT` package:
 To fill the demo database tables: 
 1. Expand the package structure in the Project Explorer `/DMO/FLIGHT_LEGACY` > `Source Code Library` > `Classes`.
 2. Open the data generator class `/DMO/CL_FLIGHT_DATA_GENERATOR` and go to `lcl_flight_data_generator`.
-3. Find the METHOD `build_connection_recurrency` and change the variable `lv_days_between` to use the constant `cv_days_between_4weeks`. The resulting code should now look like this: `DATA(lv_days_between) = cv_days_between_4weeks.` to get data that is better suited for analytical purposes.
+3. Find the METHOD `build_connection_recurrency` and change the variable `lv_days_between` to use the constant `cv_days_between_4weeks`. This will make sure the generated data better suits the analytical examples.<br>
+The resulting code should now look like this: `DATA(lv_days_between) = cv_days_between_4weeks.`
 6. Mass-activate.
 7. Now press `F9` to run the generator as Console Application.
 
