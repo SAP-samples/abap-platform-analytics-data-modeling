@@ -53,7 +53,7 @@ To be able to use the currency conversion feature, you need the currency convers
 3. Mass-activate.
 4. Check the [README.md](https://github.com/SAP-samples/cloud-abap-exchange-rates/blob/main/README.md) of the repo for instructions how to use.
 5. Try the XML import from the European Central Bank by running `zcl_ecb_exchange_rates_xml` as console application (`F9`).
-7. As an alternative implement class `zcl_ecb_exchange_rates_xml` and run it in the console. The code of the class can be found in the text file `zcl_ecb_exchange_rates_xml.aba`.
+7. As an alternative implement class `zcl_ecb_exchange_rates_xml` and run it in the console.
 
 NOTE: Some queries do have fixed dates for the currency conversion in the demo content. You may need to update the dates in order to match the available conversion rates in your system by adapting the `exchange_rate_date` parameter value in the `currency_conversion` function of the query.
 
