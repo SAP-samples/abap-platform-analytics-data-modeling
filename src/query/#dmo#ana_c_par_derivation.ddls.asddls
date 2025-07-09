@@ -1,5 +1,5 @@
 /*
-This query shows how to specify dynamic and static default variables for a parameter
+This query shows how to specify dynamic and static default values for a parameter
 */
 @AccessControl.authorizationCheck: #NOT_ALLOWED
 @EndUserText.label: 'Parameter with derivation'
@@ -11,6 +11,7 @@ define transient view entity /DMO/ANA_C_PAR_DERIVATION
   provider contract analytical_query
   with parameters
     // static default value
+    // Note that you can also use @Environment.systemField: #USER_DATE instead of a fixed date
     @AnalyticsDetails.variable.defaultValue: '20240909'
     P_FlightDate : /dmo/flight_date,
     // dynamic default value: derived by selecting from field FirstDayOfMonthDate from I_CalendarDate

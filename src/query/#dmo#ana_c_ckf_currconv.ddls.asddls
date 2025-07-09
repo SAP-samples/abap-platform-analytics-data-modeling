@@ -1,7 +1,7 @@
 /*
 This query shows how to define a currency conversion - see field "SalesAmountInEUR"
 To keep the example simple constants are used for the conversion parameters. Usually parameters
-or session variables are used for these parameters
+or session variables are used for these parameters.
 */ 
 @AccessControl.authorizationCheck: #NOT_ALLOWED
 @EndUserText.label: 'Formula with currency conversion'

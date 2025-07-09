@@ -4,7 +4,7 @@ the dimension which are not part of the query result
 This is usefull for example:
 - With special filters there is not data available for all month of a query but a chart is
   needed which shows all month
-- The business user is interesed e.g. in products which were not soled
+- The business user is interesed e.g. in products which were not sold.
 */
 @AccessControl.authorizationCheck: #NOT_ALLOWED
 @EndUserText.label: 'Unbooked values'

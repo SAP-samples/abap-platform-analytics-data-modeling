@@ -35,7 +35,7 @@ define transient view entity /DMO/ANA_C_RKF_SIMPLE
   
   virtual CurrencySalesAmountPrev : abap.cuky,  
   @AnalyticsDetails.query.axis: #COLUMNS
-  @Semantics.amount.currencyCode: 'CurrencySalesAmountCurrent'
+  @Semantics.amount.currencyCode: 'CurrencySalesAmountPrev'
   @EndUserText.label: 'Sales Jun 2024'
   case when FlightYearMonth = '202406' then curr_to_decfloat_amount(SalesAmount) else null end as SalesAmountPrev  
    

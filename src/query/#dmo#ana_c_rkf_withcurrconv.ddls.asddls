@@ -2,7 +2,7 @@
 This query shows a measure of type amount with currency conversion (see field SalesAmountInAugInEUR ). 
 For simplicity all the parameters of the currency converison are static.
 Parameters or session variables (e.g. $Session.user_date) can be used
-Notice that the conversion isn't performed in your system. Then make sure that the
+Note that if the conversion isn't performed in your system, then make sure that the
 conversion rates are available for 08-August-2024 or choose another exchange rate date.
 */
 @AccessControl.authorizationCheck: #NOT_ALLOWED

@@ -27,6 +27,7 @@ define transient view entity /DMO/ANA_C_PAR_Multi
     @AnalyticsDetails.variable.selectionType: #INTERVAL
     P_FlightYear : calendaryear,
    
+    @AnalyticsDetails.variable.mandatory: false
     P_PlaneType : /dmo/plane_type_id,
      
     @EndUserText.label: 'Increase %'

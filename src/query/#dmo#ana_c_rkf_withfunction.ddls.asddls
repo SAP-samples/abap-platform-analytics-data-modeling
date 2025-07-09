@@ -1,11 +1,12 @@
 /*
 This query shows how to use functions in restricted measures
-Allowed functions for a filter in a restricted measure on the right sight are:
+Allowed functions for a filter in a restricted measure on the right side are:
 - CALENDAR_SHIFT,
 - CALENDAR_OPERATION,
 - FISCAL_CALENDAR_SHIFT,
 - FISCAL_CALENDAR_OPERATION,
 - DATS_ADD_DAYS, DATN_ADD_DAYS
+Note that the element labels are derived dynamically at runtime 
 */
 @AccessControl.authorizationCheck: #NOT_ALLOWED
 @EndUserText.label: 'Restricted Measure with function'

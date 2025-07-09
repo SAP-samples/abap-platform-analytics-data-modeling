@@ -10,7 +10,7 @@ define transient view entity /DMO/ANA_C_DIM_TXT
 provider contract analytical_query
 as projection on /DMO/ANA_I_FlightCube
 {
-  // lazy way - use annotation @UI.textArrangement for the 
+  // convenient way - use annotation @UI.textArrangement for the 
   // dimension field 
   // at runtime the default text field from the text view 
   // derived via foreign-key and text associactions of the 

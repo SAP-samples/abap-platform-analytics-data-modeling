@@ -1,5 +1,6 @@
 /* 
 This query shows the usage of two structures (measure- and characteristic- structure)
+Measure structure -> all measures, restricted measures or formulas containing restricted measures form a structure 
 Memebers of the characteristic are either restrictions following the CDS pattern
 CASE WHEN <filter on dimensions> THEN 1 ELSE NULL END AS <fieldAlias>
 or they can be formulas using fields of the characteristic structure
@@ -54,7 +55,7 @@ define transient view entity /DMO/ANA_C_2ST_SIMPLE
      axis: #COLUMNS,
      onCharacteristicStructure: true
    } 
-   @EndUserText.label: 'Year 2026 - Year 2024' 
+   @EndUserText.label: 'Year 2025 - Year 2024' 
    @Aggregation.default: #FORMULA
    $projection.Year2025 - $projection.Year2024 as YearDifference     
       

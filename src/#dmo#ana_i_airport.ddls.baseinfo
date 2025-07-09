@@ -3,6 +3,7 @@
 {
 "FROM":
 [
+"/DMO/ANA_I_CITY",
 "/DMO/AIRPORT"
 ],
 "ASSOCIATED":

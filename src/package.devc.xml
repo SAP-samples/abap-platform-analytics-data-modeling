@@ -4,6 +4,8 @@
   <asx:values>
    <DEVC>
     <CTEXT>Analytical Flight reference Scenario</CTEXT>
+    <LANGUAGE>E</LANGUAGE>
+    <MASTERLANG>E</MASTERLANG>
     <COMP_POSID>BW-BEX-OT-ODP</COMP_POSID>
     <COMPONENT>BY30000001</COMPONENT>
     <SRV_CHECK>X</SRV_CHECK>

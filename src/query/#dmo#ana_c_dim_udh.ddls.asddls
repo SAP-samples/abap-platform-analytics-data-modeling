@@ -4,7 +4,9 @@ in a hierarchical (sometimes it is called "compact") way by
 default. 
 The levels of the hierarchy are defined by the order of dimensions 
 assigned to the rows-axis.
-The feature with a similar annotation is available for the column-axis
+The feature with a similar annotation is available for the column-axis.
+Note that by default the totals position is at the bottom. This means the hierachy nodes expand upwards (on row level).
+The position of the totals can be changed with annotation @Analytis.settings.rows.totalsLocation or @Analytis.settings.columns.totalsLocation.
 */
 @AccessControl.authorizationCheck: #NOT_ALLOWED
 @EndUserText.label: 'Universal display hierarchy'

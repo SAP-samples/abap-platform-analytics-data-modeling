@@ -1,6 +1,6 @@
 /*
-This query shows how to define a formula with an condition. See field "NumberOfPoorUtilizedFlights". Notice that the 
-Condition is calculated after aggregation. This means that the label is not '# poorly occupied flights' is not
+This query shows how to define a formula with a condition. See field "NumberOfPoorUtilizedFlights". Note that the 
+Condition is calculated after aggregation. This means that the label '# poorly occupied flights' is not
 100% correct. More precisly the field shows the number of flights in case the ocupation rate on aggregated level is poor.
 If you want the number of poorly occupied flights, you have to use the exception aggregation (see for example query 
 /DMO/ANA_C_CKF_EXCAGGR.

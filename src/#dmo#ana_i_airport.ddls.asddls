@@ -37,13 +37,11 @@ define view entity /DMO/ANA_I_Airport
       @ObjectModel.foreignKey.association: '_City'
       city           as City,
 
-/*
       @Semantics.spatialData: {
         srid.value : '3857',
         type : [#POINT]
       }
-      _City.geopoint as Geopoint,
-*/
+      _City.geopoint as Geopoint,  // simplyfy: coordinates of city = coordinates of airport
 
       /* Associations */
       _Country,

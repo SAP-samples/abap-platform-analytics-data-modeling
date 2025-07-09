@@ -1,3 +1,5 @@
+// The query shows how display attributess are handled. The attributes, in this case DepartureTime and ArrivalTime are only displayed together with the dimension (ConnectionID).
+// Display attributes can neiter be used for grouping nor for filtering.
 @AccessControl.authorizationCheck: #NOT_ALLOWED
 @EndUserText.label: 'Display Attributes'
 @ObjectModel.modelingPattern: #ANALYTICAL_QUERY
@@ -15,6 +17,7 @@ as projection on /DMO/ANA_I_FlightCube
      totals: #SHOW
   }
   ConnectionID,
+  // _Connection is the path to the according dimension view.
   _Connection.DepartureTime,
   _Connection.ArrivalTime,
   

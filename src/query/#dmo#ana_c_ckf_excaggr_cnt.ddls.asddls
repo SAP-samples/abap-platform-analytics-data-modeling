@@ -1,6 +1,6 @@
 /*
 This query shows the feature of "exception aggregation" - see field "NumberOfAirplains". It is usefull
-if something should be counted
+if something should be counted.
 */
 @AccessControl.authorizationCheck: #NOT_ALLOWED
 @EndUserText.label: 'Formulas with Counter'

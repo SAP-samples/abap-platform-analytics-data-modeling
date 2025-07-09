@@ -2,7 +2,7 @@
 This query uses parameters in the where clause. This means the end user can
 choose concreate values which should be used as filters.
 The input help (F4) is derived from foreign key associaitons of the
-underlaying analytical model (cube view)
+underlying analytical model (cube view).
 */
 @AccessControl.authorizationCheck: #NOT_ALLOWED
 @EndUserText.label: 'Parameter with special value help'

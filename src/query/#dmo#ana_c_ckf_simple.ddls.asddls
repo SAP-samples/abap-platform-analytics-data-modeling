@@ -1,8 +1,9 @@
 /*
-This query shows how formulas on measures are handled. Notice that the data is first 
-aggreated and afterward the formula is calculation on the aggregated operands
-This is special for the analytical query. In plain SQL the formula is calculated on row level and 
-then aggregated. What it means can be observed best for fields "OccupationRate" and "FreeSeatsRate"
+This query shows how formulas on measures are handled. Note that the data is first 
+aggreated and afterward the formula is calculated on the aggregated operands.
+This is special for the analytical query. In plain SQL the formula is calculated on
+row level and  then aggregated. What it means can be observed best for fields
+"OccupationRate" and "FreeSeatsRate".
 */  
 @AccessControl.authorizationCheck: #NOT_ALLOWED
 @EndUserText.label: 'Simple Formulas'

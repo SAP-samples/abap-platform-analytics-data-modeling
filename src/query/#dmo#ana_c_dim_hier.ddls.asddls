@@ -12,7 +12,7 @@ with parameters
   p_hierarchyID : /dmo/ana_airport_hieid
 as projection on /DMO/ANA_I_FlightCube
 { 
-  // _DepüartureAirport is from cube to airport dimension view 
+  // _DepartureAirport is from cube to airport dimension view 
   // and _Hier is the path from the airport dimension to its hierarchy view
   // Since the parameter of the hierarchy view is bound to a parameter of the
   // query view, the user can choose a concrete hierarchy instance at runtime

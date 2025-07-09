@@ -1,8 +1,8 @@
 /*
-This query shows how to define with hierarchy node variables.
+This query shows the usage of hierarchy node variables.
 The hierarchy specified by the association _DepartureAirportHier is used two times:
-1) it is a display hierarchy
-2) the query is filterd by a hierarchy node (set by the user)
+1) the query is filterd by a selected hierarchy node (user input)
+2) it is used as a display hierarchy
 */
 @AccessControl.authorizationCheck: #NOT_ALLOWED
 @EndUserText.label: 'Parameter as hierarchy node'
@@ -14,15 +14,16 @@ define transient view entity /DMO/ANA_C_PAR_HIERNODE
   provider contract analytical_query
   with parameters
     P_HierarchyID : /dmo/ana_airport_hieid,
-    // with this annotation the parameter is a hierarchy node variable at runtime
+    
     @AnalyticsDetails.variable: {
+      // with this annotation the parameter is a hierarchy node variable at runtime
       selectionType: #HIERARCHY_NODE,
-      // the parameter can only be used in CASE WHEN and WHERE for field specified
+      // the parameter can only be used in CASE WHEN and WHERE for the field specified
       // with referenceElement
       referenceElement: 'DepartureAirportID',
-      // a hierarchy node variable needs a referece to a hierarchy instance
+      // a hierarchy node variable needs a reference to a hierarchy instance
       hierarchyAssociation: '_DepartureAirportHier'
-   }    
+    }    
     P_DepartureAirportHierNode : /dmo/airport_from_id
 
   as projection on /DMO/ANA_I_FlightCube

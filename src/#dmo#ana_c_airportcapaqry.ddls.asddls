@@ -1,25 +1,27 @@
 @AccessControl.authorizationCheck: #NOT_ALLOWED
 @EndUserText.label: 'Airport Capacity'
 @ObjectModel: {
-  supportedCapabilities: [ #ANALYTICAL_QUERY ],
+  supportedCapabilities: [ #ANALYTICAL_QUERY, #KEY_USER_COPYING_TEMPLATE ],
   modelingPattern: #ANALYTICAL_QUERY
 }
 define transient view entity /DMO/ANA_C_AirportCapaQry
   provider contract analytical_query
   as projection on /DMO/ANA_I_FlightCube
 {
-  @AnalyticsDetails.query: {
-    axis: #ROWS,
-    totals: #SHOW
-  }
+  @AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.totals: #SHOW
   @UI.textArrangement: #TEXT_ONLY
   DepartureAirportID,
+
+  @AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.totals: #HIDE
+  FlightDate,
 
   MaximumSeats,
 
   OccupiedSeats,
 
-  abap.unit'%'                                                       as UnitPercent,
+  cast( '%' as abap.unit )                                           as UnitPercent,
 
   @Aggregation.default: #FORMULA
   @EndUserText.label: 'Utilization'

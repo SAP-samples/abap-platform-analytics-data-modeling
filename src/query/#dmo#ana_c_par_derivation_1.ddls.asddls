@@ -1,10 +1,8 @@
 /*
-In difference of this query view to query view /DMO/ANA_C_PAR_DERIVATION is, that the parameter
-P_FirstDayOfMonth is not hidden. Therefore, the derivation is only performed before the
-prompts are displayed and the prompt is prefilled with the result of the derivation.
+The difference of this query view to the query view /DMO/ANA_C_PAR_DERIVATION is, that the parameter
+P_FirstDayOfMonth is not hidden. Therefore, the derivation is only performed before the prompts are displayed and the prompt is prefilled with the result of the derivation.
 For performing the derivation the default value of P_FlightDate is used.
-Tthe user can overwrite the result. But the derivation is not performed again after user 
-changes the value of P_FlightDate
+If the user overwrites the result, the derivation is not performed again afterwards
 */
 @AccessControl.authorizationCheck: #NOT_ALLOWED
 @EndUserText.label: 'characteristic structure'

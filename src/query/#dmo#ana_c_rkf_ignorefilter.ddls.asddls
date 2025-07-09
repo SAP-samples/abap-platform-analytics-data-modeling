@@ -1,6 +1,7 @@
 /*
+Introducing the concept of filters
 This query shows restricted measures: OccupiedSeatsAll, OccupiedSeatsConnection 
-This feature is usefull, if you want to compare the number to a bigger group 
+The feature to ignore filters is usefull, if you want to compare the number to a bigger group using a formula 
 With the drill down of AirlineID and DepartureAirportID,
 OccupiedSeats shows the number of occupied seats per airline and departure airport
 OccupiedSeatsConnection shows the number of occupied seats per airline
