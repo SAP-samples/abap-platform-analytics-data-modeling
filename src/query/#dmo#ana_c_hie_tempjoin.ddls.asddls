@@ -3,7 +3,7 @@ This query uses hierarchies, which structures depend on validity intervals. The 
 The data of the cube should be assigned to the leaves which was valid at the time of the data record (temporal join).
 In this case the datefrom parameter of the hierarchy view must be filled with the initial date and the dateto parameter with the max date.
 In addition a rule is needed how to derive a date from the data of the cube. This rule is defined by using the annotation AnalyticsDetails.query.temporalJoin.
-This query derives the first day of the time element FlightYearMonth of the cube.
+This query derives the first day of the time element FlightYearMonth of the cube. This feature is available as of 2508.
 */
 @AccessControl.authorizationCheck: #NOT_ALLOWED
 @EndUserText.label: 'Time-Dep Hierarchy with temporal Join'
