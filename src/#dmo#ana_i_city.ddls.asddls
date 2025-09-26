@@ -19,11 +19,12 @@ define view entity /DMO/ANA_I_City
       @Analytics.hidden: true
       longitude,
       
-      @Semantics.spatialData: {
-        srid.value : '3857',  // SRID = 3857: Pseudo-Mercator Coordinates
-        type : [#POINT]
-      }
+//      @Semantics.spatialData: {
+//        srid.value : '3857',  // SRID = 3857: Pseudo-Mercator Coordinates
+//        type : [#POINT]
+//      }
       geopoint,
 
       _Country
 }
+
