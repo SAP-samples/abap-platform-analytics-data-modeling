@@ -1,4 +1,4 @@
-// The query shows how to display coumpounded key for Dimension using @AnalyticsDetails.query.keyDisplay settings (It can be use for hierarchy nodes too)
+// The query shows how to display coumpounded key for Dimension using @AnalyticsDetails.query.keyDisplay settings (It can be use for hierarchy nodes too) - available from 2508
 @AccessControl.authorizationCheck: #NOT_ALLOWED
 @EndUserText.label: 'Key Display'
 @ObjectModel.modelingPattern: #ANALYTICAL_QUERY
