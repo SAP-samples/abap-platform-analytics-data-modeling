@@ -74,4 +74,4 @@ This project is provided "as-is": there is no guarantee that [raised issues](htt
 For additional support, please [ask questions in SAP Community](https://community.sap.com/t5/technology-q-a/qa-p/technology-questions).
 
 ## License
-Copyright (c) 2025 SAP SE or an SAP affiliate company. All rights reserved. This project is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](LICENSE) file.
+Copyright (c) 2026 SAP SE or an SAP affiliate company. All rights reserved. This project is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](LICENSE) file.
